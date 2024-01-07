@@ -29,6 +29,7 @@ menu.add_action("ShinyWasabi", function() --Original script by ShinyWasabi
     unlock_packed_bools(3608, 3609) --"Elitas" T-shirt, High Flyer Parachute Bag
     unlock_packed_bools(3616, 3616) --Please Stop Me Mask
     unlock_packed_bools(3750, 3750) --Stocking
+    unlock_packed_bools(3765, 3769) --Elite Challenges
     unlock_packed_bools(3770, 3781) --"Death Defying" T-shirt, "For Hire" T-shirt, "Live a Little" T-shirt, "Asshole" T-shirt, "Can"t Touch This" T-shirt, "Decorated" T-shirt, "Psycho Killer" T-shirt, "One Man Army" T-shirt, "Shot Caller" T-shirt, "Showroom" T-shirt, "Elite Challenge" T-Shirt, "Elite Lousy" T-Shirt
     unlock_packed_bools(3783, 3802) --Fake Dix White T-Shirt, Fake Dix Gold T-Shirt, Fake Didier Sachs T-Shirt, Fake Enema T-Shirt, Fake Le Chien No2 T-Shirt, Fake Le Chien Crew T-Shirt, Fake Santo Capra T-Shirt, Fake Vapid T-Shirt, Fake Perseus T-Shirt, Fake Sessanta Nove T-Shirt, "Vinewood Zombie" T-shirt, "Meltdown" T-shirt, "I Married My Dad" T-shirt, "Die Already 4" T-shirt, "The Shoulder Of Orion II" T-shirt, "Nelson In Naples" T-shirt, "The Many Wives of Alfredo Smith" T-shirt, "An American Divorce" T-shirt, "The Loneliest Robot" T-shirt, "Capolavoro" T-shirt
     unlock_packed_bools(4247, 4269) --"Magnetics Script" Hat, "Magnetics Block" Hat, "Low Santos" Hat, "Boars" Hat, "Benny"s" Hat, "Westside" Hat, "Eastside" Hat, "Strawberry" Hat, "S.A." Hat, "Davis" Hat, "Vinewood Zombie" T-shirt, "Knife After Dark" T-shirt, "The Simian" T-shirt, "Zombie Liberals In The Midwest" T-shirt, "Twilight Knife" T-shirt, "Butchery and Other Hobbies" T-shirt, "Cheerleader Massacre 3" T-shirt, "Cannibal Clown" T-shirt, "Hot Serial Killer Stepmom" T-shirt, "Splatter And Shot" T-shirt, "Meathook For Mommy" T-shirt, "Psycho Swingers" T-shirt, "Vampires On The Beach" T-shirt
@@ -560,7 +561,7 @@ menu.add_action("ShinyWasabi", function() --Original script by ShinyWasabi
     stats.set_int(mpx() .. "XM22_MISSIONS", -1) -- Acid Lab Unlock
     --stats.set_int(mpx() .. "PET_CHOP_TIME", NETWORK.GET_CLOUD_TIME_AS_INT() - 86400) -- Pet Chop Time?
     stats.set_bool(mpx() .. "AWD_DOGS_BEST_FRIEND", true) -- Pet Chop Time?
-    --stats.set_int(mpx() .. "AWD_CALLME", tunables.get_int(654710993)) -- Acid Lab Equipment Unlock
+    stats.set_int(mpx() .. "AWD_CALLME", 50) -- Acid Lab Equipment Unlock
     stats.set_int(mpx() .. "H3_VEHICLESUSED", -1) -- Trade Price for Diamond Casino Heist Finale.
     stats.set_int(mpx() .. "H4_H4_DJ_MISSIONS", -1) -- Trade Price for MP0_H4_H4_DJ_MISSIONS
     stats.set_int(mpx() .. "H4_PROGRESS", -1) -- Trade Price for winky
@@ -659,6 +660,7 @@ menu.add_action("ShinyWasabi", function() --Original script by ShinyWasabi
     stats.set_int(mpx() .. "FIXER_GENERAL_BS", -8577) -- Trade price for champion/baller7
     stats.set_int(mpx() .. "FIXER_COMPLETED_BS", -1) -- Compelete all The Contract missions.
     stats.set_int(mpx() .. "FIXER_COUNT", 20) -- Trade price for granger2/deity/patriot3/jubilee
+    stats.set_int("MPPLY_XMAS23_PLATES0", 3) -- ECola & Sprunk Plates
     for i = 0, 2 do -- Unlock all daily rewards.
         local objective = globals.get_int(current_objectives_global + (1 + (0 * 5569)) + 681 + 4243 + (1 + (i * 3)))
         globals.set_int(objectives_state_global + 1 + (1 + (i * 1)), objective)
