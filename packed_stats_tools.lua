@@ -391,10 +391,10 @@ local function get_packed_int_from_index(index)
         index = (index - 42083) % 8 * 8
         statName = mpx() .. "DLC12023PSTAT_INT" .. i
     end
-    -- 50499-51058
-    if (index >= 50499 and index <= 51058) then
-        i = (index - 50499) // 8
-        index = (index - 50499) % 8 * 8
+    -- 42299-51058
+    if (index >= 42299 and index <= 51058) then
+        i = (index - 42299) // 8
+        index = (index - 42299) % 8 * 8
         statName = mpx() .. "DLC22023PSTAT_INT" .. i
     end
     return statName, index
